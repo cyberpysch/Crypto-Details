@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Cryptocurrency</title>
+</head>
+<body>
+    <h1>Search Cryptocurrency</h1>
+    <form method="GET" action="{% url 'crypto_search' %}">
+        <label for="query">Enter cryptocurrency name or symbol:</label>
+        <input type="text" id="query" name="query">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if name %}
+    <h2>Cryptocurrency Details</h2>
+    <p>Name: {{ name }}</p>
+    <p>Symbol: {{ symbol }}</p>
+    <p>Price: {{ price }}</p>
+    <p>Volume 24h: {{ volume_24h }}</p>
+    <p>Volume Change 24h: {{ volume_change_24h }}</p>
+    <p>Circulating Supply: {{ circulating_supply }}</p>
+    <p>Total Supply: {{ total_supply }}</p>
+    <p>Max Supply: {{ max_supply }}</p>
+    <p>Fully Diluted Market Cap: {{ fully_diluted_market_cap }}</p>
+    {% endif %}
+</body>
+</html>

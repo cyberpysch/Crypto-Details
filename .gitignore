@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+*.env
+
+# If you are using PostgreSQL
+*.pgpass
+
+# ENV
+.env
+.env.*
+
+# Secret settings
+/secrets.json
+
+# macOS
+.DS_Store
+
+# Thumbnails
+*_thumb.*
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+media
+
+# Node modules (if you are using Node.js for frontend)
+node_modules/
+
+# Static and media files
+staticfiles/
+media/
+
+# Virtual environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Editor specific
+.vscode/
+.idea/
+*.swp
+*~
+
+# System-specific
+Thumbs.db
+.DS_Store
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pyre type checker
+.pyre/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
